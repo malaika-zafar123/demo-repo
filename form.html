@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registeration form</title>
+</head>
+<body>
+    <h1>Student Registeration Form</h1>
+    <form> 
+        <!--User form-->
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter name"/>
+        <br><br>
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email"/>
+        <br><br>
+        <!--phone number-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number"/>
+        <br><br>
+        <!--Date of Birth-->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"/>
+        <br><br>
+        <!--Gender-->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="male"/>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="female"/>
+        <label for="female">Female</label>
+        <input type="radio" id="gender" name="Other"/>   
+        <label for="other">Other</label>  
+        <br><br>
+        <!--select course-->
+        <label for="course">Select Course:</label>
+        <select name="course" id="course">
+        <option value="">--select--</option>
+        <option value="bs">BS</option>
+        <option value="adc">ADC</option>
+        <option value="master">Master</option>
+        <option value="phd">PHD</option>
+        </select>
+        <br><br>
+        <!--Learning Mode-->
+        <label for="plm">Preffer Learning Mode:</label>
+        <input type="radio" id="plm" name="plm" value="online">
+        <label for="online">Online</label>
+        <input type="radio" id="plm" name="plm" value="offline">
+        <label for="offline">offline</label>
+        <br><br>
+        <!--Hobbies-->
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobbies" name="hobbies" vlue="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="hobbies" name="hobbies" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="hobbies" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <br><br>
+        <!--Upload student Id-->
+        <label for="student Id">Upload Student ID:</label>
+        <input type="file" id="student Id" name="student ID">
+        <br><br>
+        <!--student Bio-->
+        <label for="bio">Student Bio:</label>
+        <br>
+        <textarea name="bio" id="bio" row="4" cols="20" placeholder="Enter your bio"></textarea>
+        <br><br>
+        <!--passward-->
+        <label for="passward">Passward:</label>
+        <input type="passward" id="passward" placeholder="Enter passward">
+        <br><br>
+
+        <label for="passward">Confirm Passward:</label>
+        <input type="passward" id="passward" placeholder="Enter passward">
+        <br><br>
+        <!--Agree to Terms-->
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I agree to the term and condition</label>
+        <br><br>
+        <!--Buttons-->
+        <button type="submit">Register form</button>
+        <button type="reset">Clear form</button>
+     </form>
+    
+</body>
+</html>
