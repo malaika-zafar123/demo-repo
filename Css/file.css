@@ -1,0 +1,13 @@
+h1{
+    color: aqua;
+}
+#special{
+    color: pink;
+}
+.red{
+    background-color: blue;
+    color: white;
+}
+footer,span{
+    color :red;
+}
