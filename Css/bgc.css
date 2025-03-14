@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding:0;
+ }
+
+  /* body{
+     background-color: red;  
+   background-image: url(https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=400);
+   background-repeat: repeat; 
+   background-position:cover ;
+   background-position:left top; 
+   } */
+
+   /* body{
+      background:rgb(250, 5, 5) url(https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=400)
+      repeat right top;
+   } */
+ h1,
+ span {
+    background-color: rgb(30, 233, 57);
+    color:rgb(235, 248, 239);
+ }
+div{
+   color: rgb(9, 158, 158);
+}
+
+ a,
+ b {
+    color: rgb(76, 2, 145);
+ }
+.special{
+   background-color: green;
+color: antiquewhite;
+}
+#id-sector{
+   color: aliceblue;
+}
+.border-example{
+   color: rgb(7, 85, 109);
+   /* border-width: 2px;
+   border-style: dotted;
+   border-color: rgb(24, 226, 145); 
+   border: 2px solid pink; */
+   padding: 5px;
+   border-radius: 5px;
+    /* margin: -20rem; 
+   /* border-left: 2px solid goldenrod ;  */
+} 
+.red{
+   background: #085544;
+    padding: 10px;
+     color: pink; 
+    width: 40%;
+    height: 100px;
+    float: left;
+}
+
+.red2{
+   background: rgb(13, 12, 73);
+   padding: 8px;
+   color: white;
+   width: 40%;
+   height: 100px;
+   float: right;
+}
