@@ -63,3 +63,47 @@ color: antiquewhite;
    height: 100px;
    float: right;
 }
+p.dotted{
+   outline-style: dotted;
+   outline-color: red;
+   outline-width: 2px;
+}
+
+p.dashed{
+   outline-style: dashed;
+   outline-color: #085544;
+   outline-width: 2px;
+}
+p.solid{
+   outline-style: solid;
+   outline-color: hsl(36, 72%, 46%);
+   outline-width: 2px;
+}
+p.double{
+   outline-style: double;
+   outline-color: hwb(180 0% 0%);
+   outline-width: 2px;
+}
+p.ridge{
+   outline-style: ridge;
+   outline-color: hsl(90, 100%, 50%);
+   outline-width: 2px;
+}
+ div,a{
+   text-align: center;
+   text-decoration: overline;
+   text-transform: none;
+   text-shadow: 2px 2px  5px #023741;
+}
+h2{
+   text-align: justify;
+   text-decoration: upper line;
+   text-transform: lowercase;
+   text-shadow: 2px 2px 5px #ff0000;
+}
+p{
+   text-align: center;
+   text-decoration: overline;
+   text-transform: uppercase;
+   text-shadow: 2px 2px 5px #690372;
+}
