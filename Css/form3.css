@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #cec5c5;
+}
+
+ header{
+    text-align: center;
+    background-color: #ff4500;
+    color: white;
+    padding: 4px;
+}
+nav,a{
+  color: white;
+  /* word-spacing: 8px;*/
+}
+
+body{
+  border-bottom: 1px;
+}
+
+ #menu{
+    text-align: left;
+    background: #ffffff;
+    color: black;
+     border-style: ridge;
+    padding: 8px;
+    margin: 5px;
+    }  
+       /* body{
+        border-bottom: 1px;
+       } */
+  #about {
+    text-align: left;
+    background-color: #cec5c5;
+    color: black;
+    padding: 10px;
+    margin: 5px; 
+    border-style: ridge;
+  } 
+  /* body{
+    border-bottom: 1px;
+  } */
+  #contact{
+    text-align: left;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+    margin: 5px;
+    border-style: ridge;
+  }   
+  button{
+    background-color: #ff4500;
+    color: white;
+  }
+
+  footer{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+  }
+  a{
+    text-decoration: none;
+  }
