@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 1400px;
+
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .make-block {
+            display: block;
+        }
+
+        .make-inline {
+            display: none;
+            /* opacity: 0; */
+        }
+
+        div {
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Johnson</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+        </table>
+    </div> -->
+
+    <div style="background-color: yellowgreen;" id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem, vel.</p>
+        <button onclick="removeMyDiv()">Remove</button>
+    </div>
+
+    <div style="background-color: aquamarine;" id="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem, vel.</p>
+        <button onclick="hideMyDiv()">Hide</button>
+    </div>
+
+    <div style="background-color: chocolate;" id="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem, vel.</p>
+        <button onclick="resetAllDivs()">Reset All</button>
+    </div>
+
+    <div style="min-width: 200px; max-width: 700px;"> voluptatum deleniti nihil enim quae consequatur incidunt repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis soluta quam veniam aut ex sequi nostrum neque deleniti quod blanditiis, alias iusto exercitationem atque error voluptates optio asperiores fuga ea provident reiciendis? Magnam, placeat debitis. Eaque velit deleniti exercitationem pariatur corporis, quam incidunt? Magnam, assumenda fugit, aliquam odit error voluptates nam, recusandae magni ullam molestias earum saepe quod placeat hic aspernatur dicta. Ex deleniti aliquid aut obcaecati. Quas maiores molestias temporibus a deserunt dicta ipsam aut culpa adipisci beatae ducimus qui, ad libero, labore reiciendis explicabo illo. Iste animi amet dolores perferendis commodi nobis? Enim reprehenderit ducimus unde nesciunt?
+
+    </div>
+
+    <script>
+        function hideMyDiv() {
+            document.getElementById("div2").style.color="red";
+        }
+
+        function removeMyDiv() {
+            document.getElementById("div1").style.display="none";
+        }
+
+        function resetAllDivs(){
+            document.getElementById("div2").style.opacity="1";
+            document.getElementById("div1").style.display="block";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: #d61f43; color: #ffff;" id="div1"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima a sapiente molestias omnis! Voluptatum numquam libero adipisci animi nulla!</p>
+        <button onclick="RemoveMyDiv()">Remove</button>
+    </div>
+    <div style="background-color: #1c8d0d; color: white;" id="div2"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima a sapiente molestias omnis! Voluptatum numquam libero adipisci animi nulla!</p>
+        <button onclick="HideMyDiv()">Hide</button>
+    </div>
+   <div style="background-color: #0b737a; color: white;" id="div3"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In minima a sapiente molestias omnis! Voluptatum numquam libero adipisci animi nulla!</p>
+        <button onclick="ResetAllDivs()">Reset All</button>
+    </div>
+   
+
+    <script>
+          function HideMyDiv(){
+            document.getElementById("div2").style.display="none";
+        
+          }
+          function RemoveMyDiv(){
+            document.getElementById("div1").style.opacity="0";
+          }
+          function ResetAllDivs(){
+            document.getElementById("div2").style.opacity="1";
+            document.getElementById("div2").style.display="block";
+             document.getElementById("div1").style.display = "block"; 
+             document.getElementById("div1").style.opacity = "1"; 
+        }
+</script>
+</body>
+</html>
