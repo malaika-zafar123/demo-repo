@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h2 {
+        background-color: #529c07;
+        color: white;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      .custom-section {
+        color: white;
+        padding: 5px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+      }
+      #section1 { background-color: #033838; }
+      #section2 { background-color: #cf062f; }
+      #section3 { background-color: #529c07; }
+    </style>
+</head>
+<body>
+    <h2>Main Section</h2>
+    <section class="custom-section" id="section1">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta modi adipisci pariatur deserunt magni unde aut tenetur culpa nihil atque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus fugiat tempore deleniti quidem accusantium voluptate modi officia rem.
+         Aperiam sit iure obcaecati ratione dolorem laudantium aliquam esse quae? Nisi, beatae?
+      </p>
+      <button onclick="clearSection()">Clear</button>
+    </section>
+    <section class="custom-section" id="section2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta modi adipisci pariatur deserunt magni unde aut tenetur culpa nihil atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eius eos nam voluptas quod maiores illo iste placeat similique,
+         itaque et vel, quibusdam corporis assumenda sunt nobis vero, autem nesciunt.
+      </p>
+      <button onclick="hideSection()">Hide</button>
+    </section>
+    <section class="custom-section" id="section3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta modi adipisci pariatur deserunt magni unde aut tenetur culpa nihil atque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id omnis, ullam autem accusamus enim rerum non. Quas nostrum laboriosam facilis 
+        accusantium repellendus saepe modi nesciunt soluta sapiente, eum vitae commodi?
+      </p>
+      <button onclick="resetSection()">Reset</button>
+    </section>
+    
+    <script>
+      function hideSection() {
+        document.getElementById("section2").style.display = "none";
+      }
+      function clearSection() {
+        document.getElementById("section1").style.visibility = "hidden";
+      }
+      function resetSection() {
+        document.getElementById("section2").style.display = "block";
+        document.getElementById("section2").style.visibility = "visible";
+        document.getElementById("section1").style.visibility = "visible";
+        document.getElementById("section1").style.display = "block";
+      }
+    </script>
+</body>
+</html>
