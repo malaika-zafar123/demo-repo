@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>File</title>
     <style>
         .container{
             background-color: #c5b39f;
@@ -56,6 +56,20 @@
              border: 3px solid #15056b;
              padding: 10px;
          }
+         div p1{
+            background-color: #db09ae;
+         }
+         div+p{
+            background-color: #15056b;
+            color: antiquewhite;
+         }
+         p i:first-child {
+            color: rgb(32, 61, 3);
+         }
+         span::first-line {
+            color: blue;
+            font-variant: small-caps;
+         }
     </style>
 </head>
 <body>
@@ -88,5 +102,27 @@
       <p>Hello World!</p>
     </div>
 </div>
+ <!--css combinators-->
+     <h1>Combinators</h1>
+     <div>
+        <p1>This is a 1 paragraph</p1>
+        <br>
+        <p1>This is a 2 paragraph</p1>
+    </div>
+    <p>This is a 3 paragraph</p>
+    <br>
+    <div>
+        <p>This is paragraph</p>
+    </div>
+    <br>
+    <!--Pesudo classes-->
+    <h1>Pesudo classes</h1>
+    
+        <p>This is <i>strong</i> </p>
+        <p>This is very <i>Difficult</i> </p>
+<!--Posedu elements-->
+     <h1>Pesudo Element</h1>
+     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore voluptatum sapiente dolores reiciendis excepturi enim voluptates, quod maxime quos! Laborum voluptate sed sequi fugit tempore tempora earum a lorem. </span>
+    
 </body>
 </html>
