@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css Animation</title>
+    <style>
+      .body1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 100px;
+      }
+      .body2 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 100px;
+      }
+      .box {
+        height: 50px;
+        width: 100px;
+        padding-top: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: rgb(107, 107, 221);
+        color: white;
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+      .slide-in {
+        animation: slideIn 5s ease-in-out;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translatey(-180px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      .bounce-in {
+        animation: BounceIn 1s infinite alternate;
+      }
+      @keyframes BounceIn {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+          transform: translateY(50px);
+        }
+      }
+      .rotate-in {
+        animation: RotateIn 2s linear infinite;
+      }
+      @keyframes RotateIn {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .scale-in {
+        animation: scaleIn 3s infinite alternate;
+      }
+      @keyframes scaleIn {
+        from {
+          transform: scale(0.5);
+        }
+        to {
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="body1">
+      <div class="box fade-in">Fade-In</div>
+      <div class="box slide-in">Slide-In</div>
+      <div class="box bounce-in">Bounce-In</div>
+      <div class="box rotate-in">Rotate-In</div>
+      <div class="box scale-in">Scale-In</div>
+    </div>
+    <div class="body2">
+      <div class="box fade-in">Fade-In</div>
+      <div class="box slide-in">Slide-In</div>
+      <div class="box bounce-in">Bounce-In</div>
+      <div class="box rotate-in">Rotate-In</div>
+      <div class="box scale-in">Scale-In</div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+</head>
+<body>
+    
+    <div class="box fade-in">Fade-In</div>
+    <div class="box slide-in"> Slide-In</div>
+    <div class="box bounce-in"> Bounce-In</div>
+    <div class="box rotate-in">Rotate-In</div>
+    <div class="box scale-in">Scale-In</div>
+
+
+    
+</body>
+</html> -->

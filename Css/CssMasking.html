@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css masking</title>
+    <style>
+        :root{
+            --blue: #f82500;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+            object-fit: scale-down;
+             /* object-position:80% 100% ;  */
+        }
+        .mask{
+            width: 300px;
+            height: 500px;
+            -webkit-mask-image:url(https://th.bing.com/th/id/OIP.ddXEJBfTyhN4HRQf7IrrggHaIl?w=171&h=198&c=7&r=0&o=5&pid=1.7);
+            mask-image: url(https://th.bing.com/th/id/OIP.ddXEJBfTyhN4HRQf7IrrggHaIl?w=171&h=198&c=7&r=0&o=5&pid=1.7);
+            mask-repeat: no-repeat;
+        }
+        button, section, span{
+            color: var(--blue);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/OIP.L_oleeBwuiv2QCmWZGwzVgHaHa?w=1620&h=1620&rs=1&pid=ImgDetMain" alt="">
+    <br><br><br>
+    <div class="mask">
+     <img src="https://th.bing.com/th/id/OIP.S16MwWFznloeMQVbOE-bugHaEp?rs=1&pid=ImgDetMain" alt="">
+    </div>
+
+<button>click me</button>
+<span>hello</span>
+<section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestiae similique dicta delectus, libero nihil quibusdam amet fuga, voluptatem asperiores id animi incidunt. Expedita, qui nihil tenetur repudiandae voluptatibus quibusdam eos distinctio amet itaque excepturi necessitatibus, illum asperiores aspernatur corrupti earum voluptates hic ullam facilis fugiat aliquam quam. Non, qui.</section>
+
+</body>
+</html>

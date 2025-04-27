@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css panigation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      h1 {
+        color: #07750a;
+      }
+      .pagination {
+        display: inline-block;
+      }
+
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .pagination a.active {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .pagination a:hover:not(.active) {
+        background-color: #704747;
+        color: white;
+        border-radius: 5px;
+      }
+      h2 {
+        color: #07750a;
+      }
+      .newspaper p {
+        column-count: 4;
+        column-gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css panigation</h1>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+    <h2>Multiple column</h2>
+    <div class="newspaper">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+        minima neque? Sit, expedita aliquid dolorum, ipsam laboriosam delectus
+        id, dolor iusto facere molestiae laudantium cumque nulla. Accusantium,
+        maxime molestias! Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Numquam sit laborum aut iusto, quasi odit eligendi similique sed
+        quaerat officia culpa vel deleniti. Rerum accusamus earum, repellat vel
+        maiores voluptas nesciunt non eligendi eaque adipisci quis officia ex
+        vero nobis enim asperiores dignissimos quam ut quo repudiandae pariatur.
+        Nemo, adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Molestiae accusamus beatae sapiente obcaecati eius totam quia,
+        harum necessitatibus iure eos exercitationem amet quam maxime
+        praesentium eaque laboriosam soluta magni quasi?
+      </p>
+    </div>
+  </body>
+</html>

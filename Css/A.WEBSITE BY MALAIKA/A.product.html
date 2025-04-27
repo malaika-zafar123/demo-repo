@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(245, 231, 219);
+    }
+
+    h1 {
+      padding: 15px;
+      margin: 0;
+      color: rgb(29, 17, 1);
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10%;
+      margin-left: 10%;
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      padding: 3%;
+      margin-left: 20%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    
+    }
+
+    .product-card img {
+        
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-card h3 {
+      margin: 10px  5px;
+      font-size: 18px;
+      
+    }
+
+    .product-card p {
+      font-size: 16px;
+    }
+    @media (max-width:768) {
+        h1{
+          font-size: 150%;  
+        }
+        .product{
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 3%;
+        }
+        .product-card{
+            
+        }
+    }
+    </style>
+</head>
+<body>
+  
+    <h1>Coffee Menu</h1>
+    <div class="product">
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQok5dTmpBbuTNCjaEgSYNI9EcaRmD4mBJxAUKUV3fv4hZiMik9dMCxu9G-Cu42qkwbA&usqp=CAU" width="200" alt="">
+            <h3>Cappuccino</h3>
+            <p>Rs.200</p>
+        </div>
+        <br>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsMBgO0a-YRlGPJN5U9EFpjs6hWZXyMhSRr5GvyDvYs96rkezffkJ09ms_kpv4frRql4&usqp=CAU" alt="">
+            <h3>Espresso</h3>
+            <p>Rs.250</p>
+        </div>
+        <br>
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/1175893863/photo/cup-of-green-tea-matcha-latte.jpg?s=612x612&w=0&k=20&c=CYS6E6Cru4I16a5Q5W-mS85Ww2_VtIlPdCx12L86YKM=" width="300">
+            <h3>Latte </h3>
+            <p>Rs.300</p>
+        </div>
+        <br>
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/1169132256/photo/set-of-coffee-latte-or-cappuccino-foam-art.jpg?s=612x612&w=0&k=20&c=ghKYI101XG1q_dLaKU2stjqdoJrCehuicRRxkd9_TdY=" width="300" alt="">
+            <h3>Different Coffee</h3>
+        </div>
+    </div>
+    <h1>Food Menu</h1>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtZqWiqpBxZiKzfLxiZLvo25jJ69awfYYQ4ymeGqLMi3j4wGjrLalQ8YbBnnMsnu2kq6g&usqp=CAU" width="200" alt="">
+        <h3>Biryani</h3>
+        <p>Rs.300</p>
+    </div>
+    <br>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKO1PDAUtP2SOdk59nBy8wDO2yVgN3GKTUSqwepIVS4mZIKLvnWRycoHFHkYKByLXsF4&usqp=CAU" width="300" alt="">
+        <h3>Nihari </h3>
+        <p>Rs.400</p>
+    </div>
+        <br>
+        <div class="product-card">
+            <img src="https://media.gettyimages.com/id/1056689118/photo/turkish-meze-variations.jpg?s=612x612&w=0&k=20&c=eGfGkR6iERPbC9nx72hpAgigWoNneR7P4_2bmynSDQM=" width="300">
+            <h3>Different Dishes</h3>
+        </div>
+
+</body>
+</html>

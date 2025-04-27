@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Examples</title>
+    <style>
+        body {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+            
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Slide Animation */
+        .slide {
+            animation: slideIn 5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-500px); }
+            to { transform: translateY(0); }
+        }
+
+        /* Bounce Animation */
+        .bounce {
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(100px); }
+        }
+
+        /* Rotate Animation */
+        .rotate {
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Scale Animation */
+        .scale {
+            animation: scaleUp 3s infinite alternate;
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(1); }
+            to { transform: scale(2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box fade-in">Fade In</div>
+    <div class="box slide">Slide In</div>
+    <div class="box bounce">Bounce</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: antiquewhite;
+        background-color: blue;
+        border: none;
+        position: relative;
+        cursor: pointer;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        padding: 4px;
+        border-radius: 5px;
+        color: antiquewhite;
+        background-color: rgb(0, 0, 0);
+        font-size: 10px;
+        display: none;
+        position: absolute;
+        top: -1.5rem;
+        right: 15px;
+      }
+      div {
+        position: relative;
+      }
+      button:hover span {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>
+        Hover on me
+        <span>I am a tool tip</span>
+      </button>
+    </div>
+  </body>
+</html> -->

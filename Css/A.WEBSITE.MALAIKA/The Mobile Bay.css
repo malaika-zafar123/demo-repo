@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing:box-sizing;
+  
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --primary-color: #03d4fd;
+  --text-color: #fdfdfb;
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top:0%;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 1rem 5px;
+  width: 100%;
+  z-index: 2;
+}
+.logo a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 40px;
+}
+.nav ul {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.nav li {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 20px;
+  display: flex;
+  font-size: 20px;
+}
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+/* product */
+#product {
+   background-color: var(--primary-color); 
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.column-wrapper{
+    text-align: center;
+    display: flex; 
+     flex-wrap: wrap; 
+     flex-direction: row;
+    padding: 20px 20px;
+    margin-top: 5px;
+    font-size: 20px;
+     object-fit: cover; 
+    justify-content: space-between;
+    border-radius: 8px solid rgb(10, 10, 10);
+}
+  .btn button{
+    padding: 10px 20px;
+    background-color: rgb(2, 118, 252);
+    color: var(--text-color);
+    border-style: none;
+    border-radius: 5px;
+ } 
+ .btn button:hover{
+    background-color: #038eaa;
+ }
+ /* contact */
+ .contact{
+     margin: 20px auto; 
+     text-align: center;  
+ }
+ h2{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px;
+     }
+    
+    .contact input ,
+.contact textarea{
+     width: 40%;
+     padding: 10px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     border: 1px solid rgb(108, 108, 109);
+     border-radius: 5px ;
+}
+.contact input:focus, 
+.contact textarea:focus{
+    outline: none;
+      border: 1px solid rgb(78, 153, 252);
+}
+button{
+    background-color:rgb(2, 118, 252);
+    color: var(--text-color);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    border-style: none;
+}
+button:hover{
+    background-color: #038eaa;
+}
+/* footer */
+footer{
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 20px;
+}
+footer a{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 2px 5px;
+}
+@media only screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0px;
+    text-align: center;
+    position: static; 
+  }
+
+  .logo a {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav li {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .column-wrapper{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .contact input ,
+  .contact textarea{ 
+    width: 95%;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  footer{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+  
